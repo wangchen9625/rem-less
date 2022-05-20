@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 14px;
+        }
+        div{
+            font-size: 12px;
+        }
+        p{
+            /* 相当于12 * 3 = 36px */
+            height: 5em;
+            width: 10em;
+            background-color: orange;
+        }
+        h1{
+            height: 10rem;
+            width: 10rem;
+            background-color: skyblue
+        }
+        /* @media mediatype and|not|olty (media feature) {
+            
+        }
+        用@media开头 
+        1mediatype 媒体类型 不同的中断划分不同的类型 
+                            all:用于所有设备 print用于打印机和打印预览 screen用于电脑屏幕,平板,手机
+        2关键字 and not only
+        and 多个媒体属性链接一起,相当于且的意思
+        not 排除
+        only 当且仅当
+        3media feature 媒体特性 必须要小括号包含 
+        max-width  最大可见区域宽度
+        min-width  最小可见区域宽度
+        width 可见区域宽度
+        */
+
+        /* 在我的屏幕上,并且 最大的宽度是800像素,设置我们的样式 */
+        /* and 后面的空格 不能省略 */
+        @media screen and (max-width:800px){
+            body{
+                background-color: pink;
+            }
+        }
+        @media screen and (max-width:500px){
+            body{
+                background-color: purple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        媒体查血(Media Query)CSS3新增的特性
+        可以根据不同的屏幕尺寸设置不同的样式
+        当你充值浏览器大小的过程中,页面根据浏览器的高度和宽度重新渲染页面
+        
+     -->
+     <p>当像素低于500px的时候,是紫色</p>
+
+     <p>500-800 是粉色</p>
+     <p>当像素高于800px的时候,粉色不见了</p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+header{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    a{
+        color: red;
+    }
+}
+nav{
+    .logo{
+        color: green;
+    }
+    &::before{
+        content:"伪类选择器before";
+    }
+}
+.weilei{
+    a{
+        // 伪类需要加一个&
+        &:hover{
+            color: blue;
+        }
+    }
+}

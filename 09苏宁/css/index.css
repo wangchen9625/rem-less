@@ -1,0 +1,29 @@
+body{
+    min-width: 320px;
+    max-width: 750px;
+    /* flexible 把我们划分成10等分 */
+    width: 10rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+img{
+    width: 1.0933rem;
+    height: 1rem;
+}
+/* 如果我们的屏幕超过了750 则按照750设计稿来走, 不会让我们页面超过750px */
+@media screen and (min-width:750px) {
+    html{
+        font-size: 75px!important;
+    }
+}
+.search-content{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+    height: 1.173rem;
+    background-color: #ffc001;
+}

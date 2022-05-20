@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 14px;
+        }
+        div{
+            font-size: 12px;
+        }
+        p{
+            /* 相当于12 * 3 = 36px */
+            height: 5em;
+            width: 10em;
+            background-color: orange;
+        }
+        h1{
+            height: 10rem;
+            width: 10rem;
+            background-color: skyblue
+        }
+    </style>
+</head>
+<body>
+    <!-- rem 等比例适配方案
+        rem是一个单位 类似 pm em(相当于父元素的字体大小)如果父元素的文字大小为12px  那么2em为24px
+        rem = root em
+        rem基准与html元素的字体大小
+        优点:可以修改html里面文字大小来改变页面中元素的大小  可以整体控制
+     -->
+     <div>
+         <p>em大小取决于父元素的文字大小</p>
+         <h1>rem基于html元素的字体大小</h1>
+     </div>
+</body>
+</html>

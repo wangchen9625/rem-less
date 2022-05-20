@@ -1,0 +1,23 @@
+@border: 5px + 5;
+//运算符左右必须敲一个空格
+div{
+    width: 200px - 50;//可以直接做运算
+    height: (200px - 100) * 2;
+    border: @border solid red;
+}
+// p{
+//     width: (82 / 50)rem;
+//     height: (82 / 50)rem;
+//     background-color: pink;
+// }
+h1 {
+    width: (82 / 50rem);//要加括号才可以 不加括号不行 除法
+    height: 82 / 50rem;//不加括号转换不了
+}
+p{
+    width: (100px / 50rem);
+    height: (120 / 50rem);
+}
+  
+//两个数运算, 一个有单位,另一个没有单位,以有单位为准
+//如果两个都有单位,且单位还不一样,结果以第一个单位为准
